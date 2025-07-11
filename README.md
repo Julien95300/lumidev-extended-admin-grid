@@ -13,6 +13,14 @@ Il simplifie l’analyse comptable et le suivi administratif sans requérir d’
 
 ## Installation
 
+### Via composer
+1.composer require lumidev/extended-admin-grid
+2. Lancer :
+   ```bash
+   bin/magento module:enable LumiDev_ExtendedAdminGrid
+   bin/magento setup:upgrade
+   bin/magento cache:flush
+
 ### Via `app/code` :
 1. Copier le dossier `LumiDev/ExtendedAdminGrid` dans `app/code/`.
 2. Lancer :
@@ -26,3 +34,6 @@ Magento versions : 2.4.3 – 2.4.7
 Éditions : Community, Enterprise
 PHP versions : 7.4 – 8.2
 
+### Mentions légales
+
+© 2025 LumiDev. Tous droits réservés.
