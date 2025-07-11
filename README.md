@@ -8,7 +8,7 @@ Il simplifie l’analyse comptable et le suivi administratif sans requérir d’
 - Ajoute les colonnes TVA appliquée, Numéro de TVA client, Pays client, Remise appliquée dans la grille des factures et avoirs.
 - Compatible tri et filtre natifs Magento
 - Aucun impact sur les performances backoffice
-- Développé selon les standards Magento 2 (plugins, dependency injection, pas d’override de core)
+- Développé selon les standards Magento 2 (Model, dependency injection, pas d’override de core)
 
 
 ## Installation
