@@ -65,8 +65,6 @@ class Collection extends \Magento\Sales\Model\ResourceModel\Order\Creditmemo\Gri
                 ['discount_amount', 'tax_amount']
             )->distinct();
 
-            // Alias created_at en creditmemo_created_at
-            $this->getSelect()->columns(['creditmemo_created_at' => 'main_table.created_at']);
         }
 
         parent::_renderFiltersBefore();
@@ -74,7 +72,6 @@ class Collection extends \Magento\Sales\Model\ResourceModel\Order\Creditmemo\Gri
 
     protected function _initSelect()
     {
-        $this->addFilterToMap('creditmemo_created_at', 'main_table.created_at');
         $this->addFilterToMap('base_grand_total', 'main_table.base_grand_total');
         $this->addFilterToMap('grand_total', 'main_table.grand_total');
         $this->addFilterToMap('store_id', 'main_table.store_id');

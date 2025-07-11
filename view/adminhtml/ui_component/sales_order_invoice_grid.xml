@@ -2,14 +2,6 @@
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
 
     <columns name="sales_order_invoice_columns">
-
-        <column name="invoice_created_at" class="Magento\Ui\Component\Listing\Columns\Date">
-            <settings>
-                <filter>dateRange</filter>
-                <dataType>date</dataType>
-                <label translate="true">Invoice Date</label>
-            </settings>
-        </column>
         <column name="country_id">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

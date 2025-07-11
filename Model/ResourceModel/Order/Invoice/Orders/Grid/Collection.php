@@ -66,11 +66,6 @@ class Collection extends \Magento\Sales\Model\ResourceModel\Order\Invoice\Orders
                 ['discount_amount', 'base_tax_amount']
             )->distinct();
 
-            // Alias created_at en invoice_created_at
-            $this->getSelect()->columns([
-                'invoice_created_at' => 'main_table.created_at',
-                'invoice_billing_name' => 'main_table.billing_name'
-            ]);
         }
 
         parent::_renderFiltersBefore();
@@ -78,14 +73,12 @@ class Collection extends \Magento\Sales\Model\ResourceModel\Order\Invoice\Orders
 
     protected function _initSelect()
     {
-        $this->addFilterToMap('invoice_created_at', 'main_table.created_at');
         $this->addFilterToMap('base_grand_total', 'main_table.base_grand_total');
         $this->addFilterToMap('grand_total', 'main_table.grand_total');
         $this->addFilterToMap('store_id', 'main_table.store_id');
         $this->addFilterToMap('store_name', 'main_table.store_name');
         $this->addFilterToMap('order_id', 'main_table.order_id');
         $this->addFilterToMap('order_increment_id', 'main_table.order_increment_id');
-        $this->addFilterToMap('invoice_billing_name', 'main_table.billing_name');
         $this->addFilterToMap('shipping_name', 'main_table.shipping_name');
         $this->addFilterToMap('status', 'main_table.status');
         $this->addFilterToMap('entity_id', 'main_table.entity_id');
