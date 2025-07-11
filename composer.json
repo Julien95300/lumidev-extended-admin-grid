@@ -1,6 +1,6 @@
 {
     "name": "lumidev/extended-admin-grid",
-    "description": "Ajoute des colonnes TVA, date de facture et autres à l'admin Magento.",
+    "description": "Le module LumiDev Extended Admin Grid ajoute des colonnes clés aux grilles des factures, commandes et avoirs Magento 2.",
     "type": "magento2-module",
     "version": "1.0.0",
     "require": {
